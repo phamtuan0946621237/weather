@@ -1,0 +1,412 @@
+[{
+    "id": 14256,
+    "coord": {
+      "lon": 48.570728,
+      "lat": 34.790878
+    },
+    "country": "IR",
+    "geoname": {
+      "cl": "P",
+      "code": "PPL",
+      "parent": 132142
+    },
+    "langs": [
+      {
+        "de": "Azad Shahr"
+      },
+      {
+        "fa": "آزادشهر"
+      }
+    ],
+    "name": "Azadshahr",
+    "stat": {
+      "level": 1.0,
+      "population": 514102
+    },
+    "stations": [
+      {
+        "id": 7030,
+        "dist": 9,
+        "kf": 1
+      }
+    ],
+    "zoom": 10
+  },
+  {
+    "id": 18918,
+    "coord": {
+      "lon": 34.058331,
+      "lat": 35.012501
+    },
+    "country": "CY",
+    "geoname": {
+      "cl": "P",
+      "code": "PPL",
+      "parent": 146615
+    },
+    "langs": [
+      {
+        "en": "Protaras"
+      },
+      {
+        "ru": "Протарас"
+      }
+    ],
+    "name": "Protaras",
+    "stat": {
+      "level": 1.0,
+      "population": 20230
+    },
+    "stations": [
+      {
+        "id": 5448,
+        "dist": 42,
+        "kf": 1
+      }
+    ],
+    "zoom": 6
+  },
+  {
+    "id": 23814,
+    "coord": {
+      "lon": 47.055302,
+      "lat": 34.383801
+    },
+    "country": "IR",
+    "geoname": {
+      "cl": "P",
+      "code": "PPL",
+      "parent": 128222
+    },
+    "langs": [
+      {
+        "fa": "کهریز"
+      }
+    ],
+    "name": "Kahriz",
+    "stat": {
+      "level": 1.0,
+      "population": 766706
+    },
+    "stations": [
+      {
+        "id": 7022,
+        "dist": 10,
+        "kf": 1
+      }
+    ],
+    "zoom": 7
+  },
+  {
+    "id": 24851,
+    "coord": {
+      "lon": 47.9725,
+      "lat": 34.073399
+    },
+    "country": "IR",
+    "geoname": {
+      "cl": "P",
+      "code": "PPL",
+      "parent": 125605
+    },
+    "langs": [
+      {
+        "fa": "نور آباد"
+      },
+      {
+        "link": "http://en.wikipedia.org/wiki/Nurabad%2C_Lorestan"
+      },
+      {
+        "ru": "Нурабад"
+      }
+    ],
+    "name": "Nurabad",
+    "stat": {
+      "level": 1.0,
+      "population": 73528
+    },
+    "stations": [
+      {
+        "id": 7022,
+        "dist": 80,
+        "kf": 1
+      },
+      {
+        "id": 7024,
+        "dist": 75,
+        "kf": 1
+      },
+      {
+        "id": 7073,
+        "dist": 49,
+        "kf": 1
+      }
+    ],
+    "zoom": 9
+  },
+  {
+    "id": 32723,
+    "coord": {
+      "lon": 52.309422,
+      "lat": 35.23455
+    },
+    "country": "IR",
+    "geoname": {
+      "cl": "P",
+      "code": "PPL",
+      "parent": 116401
+    },
+    "langs": [
+      {
+        "fa": "ايستگاه گرمسار"
+      }
+    ],
+    "name": "Istgah-e Garmsar",
+    "stat": {
+      "level": 1.0,
+      "population": 49491
+    },
+    "stations": [
+      {
+        "id": 7036,
+        "dist": 99,
+        "kf": 1
+      }
+    ],
+    "zoom": 8
+  },
+  {
+    "id": 32767,
+    "coord": {
+      "lon": 51.56889,
+      "lat": 35.439442
+    },
+    "country": "IR",
+    "geoname": {
+      "cl": "P",
+      "code": "PPL",
+      "parent": 110791
+    },
+    "langs": [
+      {
+        "fa": "قرچك"
+      }
+    ],
+    "name": "Qarchak",
+    "stat": {
+      "level": 1.0,
+      "population": 251834
+    },
+    "stations": [
+      {
+        "id": 7032,
+        "dist": 36,
+        "kf": 1
+      },
+      {
+        "id": 7074,
+        "dist": 48,
+        "kf": 1
+      }
+    ],
+    "zoom": 9
+  },
+  {
+    "id": 41210,
+    "coord": {
+      "lon": 49.195999,
+      "lat": 36.213001
+    },
+    "country": "IR",
+    "geoname": {
+      "cl": "P",
+      "code": "PPL",
+      "parent": 111452
+    },
+    "langs": [
+      {
+        "fa": "خرم درّه"
+      }
+    ],
+    "name": "Khorram Darreh",
+    "stat": {
+      "level": 1.0,
+      "population": 50528
+    },
+    "stations": [
+      {
+        "id": 7033,
+        "dist": 76,
+        "kf": 1
+      }
+    ],
+    "zoom": 12
+  },
+  {
+    "id": 50672,
+    "coord": {
+      "lon": 44.893799,
+      "lat": 2.6185
+    },
+    "country": "SO",
+    "geoname": {
+      "cl": "P",
+      "code": "PPL",
+      "parent": 51966
+    },
+    "langs": [
+      {
+        "so": "Wanlaweyn"
+      }
+    ],
+    "name": "Wanlaweyn",
+    "stat": {
+      "level": 1.0,
+      "population": 22022
+    },
+    "zoom": 9
+  },
+  {
+    "id": 52867,
+    "coord": {
+      "lon": 44.529991,
+      "lat": 1.78784
+    },
+    "country": "SO",
+    "geoname": {
+      "cl": "P",
+      "code": "PPLA2",
+      "parent": 51966
+    },
+    "langs": [
+      {
+        "so": "Qoryooley"
+      }
+    ],
+    "name": "Qoryooley",
+    "stat": {
+      "level": 1.0,
+      "population": 51720
+    },
+    "zoom": 8
+  },
+  {
+    "id": 53157,
+    "coord": {
+      "lon": 49.872822,
+      "lat": 11.47197
+    },
+    "country": "SO",
+    "geoname": {
+      "cl": "P",
+      "code": "PPL",
+      "parent": 64661
+    },
+    "langs": [
+      {
+        "link": "http://en.wikipedia.org/wiki/Qandala"
+      },
+      {
+        "so": "Qandala"
+      }
+    ],
+    "name": "Qandala",
+    "stat": {
+      "level": 1.0,
+      "population": 15923
+    },
+    "zoom": 8
+  },
+  {
+    "id": 53654,
+    "coord": {
+      "lon": 45.34375,
+      "lat": 2.03711
+    },
+    "country": "SO",
+    "geoname": {
+      "cl": "P",
+      "code": "PPLC",
+      "parent": 64833
+    },
+    "name": "Mogadishu",
+    "stat": {
+      "level": 1.0,
+      "population": 2587183
+    },
+    "zoom": 1
+  },
+  {
+    "id": 54715,
+    "coord": {
+      "lon": 42.544498,
+      "lat": 3.79376
+    },
+    "country": "SO",
+    "geoname": {
+      "cl": "P",
+      "code": "PPL",
+      "parent": 58802
+    },
+    "name": "Luuq",
+    "stat": {
+      "level": 1.0,
+      "population": 33820
+    },
+    "zoom": 8
+  },
+  {
+    "id": 55671,
+    "coord": {
+      "lon": 42.545361,
+      "lat": -0.35817
+    },
+    "country": "SO",
+    "geoname": {
+      "cl": "P",
+      "code": "PPLA",
+      "parent": 56083
+    },
+    "langs": [
+      {
+        "de": "Kismaayo"
+      },
+      {
+        "en": "Kismayo"
+      },
+      {
+        "es": "Kismaayo"
+      },
+      {
+        "fi": "Kismayo"
+      },
+      {
+        "fr": "Kismaayo"
+      },
+      {
+        "id": "Kismaayo"
+      },
+      {
+        "ja": "キスマヨ"
+      },
+      {
+        "link": "http://en.wikipedia.org/wiki/Kismayo"
+      },
+      {
+        "nl": "Kismayo"
+      },
+      {
+        "so": "Kismaayo"
+      },
+      {
+        "sw": "Kismayu"
+      }
+    ],
+    "name": "Kismaayo",
+    "stat": {
+      "level": 1.0,
+      "population": 234852
+    },
+    "zoom": 6
+  }
+]

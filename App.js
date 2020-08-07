@@ -1,17 +1,16 @@
 import * as React from 'react';
-import { Button, View, Text } from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
-import HomeNavigation from './navigation'
 // import createStore from './createReduxStore'
-// import { Provider } from 'react-redux'
-// import store from './redux/store'
+import { Provider } from 'react-redux';
+import HomeNavigation from './navigation';
+import store from './redux/configStore';
+
+
 
 function App() {
   return (
-    // <Provider >
+    <Provider store={store}>
     <HomeNavigation />
-    // </Provider>
+    </Provider>
   );
 }
 

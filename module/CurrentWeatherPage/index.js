@@ -1,19 +1,15 @@
 import { useRoute } from '@react-navigation/native';
 import React, { useEffect, useState } from 'react';
-import { Image, Text, View, Modal } from 'react-native';
+import { Image, Text, View } from 'react-native';
 import { ScrollView, TouchableOpacity } from 'react-native-gesture-handler';
 import { Image3, SunnyIcon } from '../../assets';
 import BackgroundViewComponent from '../../common/components/BackgroundViewComponent';
+import dataCity from '../../data/data.json';
+import ModalSelectedTimeComponent from './component/ModalSelectedTimeComponent';
 // import { Homepage, ListCity } from '../../navigation'
 import style from './style';
-import { GET_CURRENT_WEATHER, GET_FIVEDAY_WEATHER } from '../../connection/index'
-import dataCity from '../../data/data.json'
-import moment from "moment";
-import { SafeAreaView } from 'react-native-safe-area-context';
-import ModalSelectedTimeComponent from './component/ModalSelectedTimeComponent'
-const CurrentWeatherPage = ({ navigation }) => {
+const CurrentWeatherPage = (props) => {
   // Variable
-  const [data, setData] = useState();
   const [dataFiveDayWeather, setDataFiveDayWeather] = useState()
   const route = useRoute().params
   const indexCity = route?.index;
@@ -27,20 +23,31 @@ const CurrentWeatherPage = ({ navigation }) => {
   var dayNow = parseInt(today.getDate()) < 10 ? `0${today.getDate()}` : `${today.getDate()}`
   var dateNow = yearNow + '-' + monthNow + '-' + dayNow;
   const [isShow,setIsShow] = useState(false)
+  const {onGetCurrentWeatherAction,currentWeather,onGetFourDayWeatherAction,fourDayWeather} = props
 
   // Lyfe Cycle
   useEffect(() => {
-    GET_CURRENT_WEATHER("https://api.openweathermap.org/data/2.5/weather", { id: idCity, appid: 'd6cc72542a1131963fd7780fba627db1' }).then(response => {
-      setData(response)
-    });
-
-    GET_FIVEDAY_WEATHER("https://api.openweathermap.org/data/2.5/forecast", { id: idCity, appid: 'd6cc72542a1131963fd7780fba627db1' }).then(response => {
-      // setData(response)
-      setDataFiveDayWeather(response)
-      const filter = response.list.filter((item) => item.dt_txt.slice(0, 10) === dateNow)
-      setFilterDateToday(filter)
-    })
+    let param = {
+      idCity,
+      appId: 'd6cc72542a1131963fd7780fba627db1'
+    }
+    onGetCurrentWeatherAction(param)
+    onGetFourDayWeatherAction(param)
   }, [])
+
+  useEffect(()=> {
+    
+  },[currentWeather])
+  
+  useEffect(() => {
+    if(!fourDayWeather) return;
+    if(fourDayWeather !== undefined) {
+      setDataFiveDayWeather(fourDayWeather)
+      const filter = fourDayWeather.list.filter((item) => item.dt_txt.slice(0, 10) === dateNow)
+      setFilterDateToday(filter)
+    }
+    
+  },[fourDayWeather])
 
   // Action 
   function _onClickAfterTomorrow2(date) {
@@ -78,7 +85,7 @@ const CurrentWeatherPage = ({ navigation }) => {
       <BackgroundViewComponent />
       <Image source={Image3} style={{ position: 'absolute', top: 420 }} />
       <View style={{ paddingHorizontal: 40 }}>
-        <Text style={{ fontSize: 70, color: '#828282' }}>{data !== undefined ? data.main.temp : null}°F</Text>
+        <Text style={{ fontSize: 70, color: '#828282' }}>{currentWeather !== undefined ? currentWeather.main.temp : null}°F</Text>
         <Text style={{ fontSize: 20, color: '#828282', marginTop: 10 }}>Current Weather in {dataCity[indexCity].name}</Text>
         <Text style={{ fontSize: 18, color: '#828282', marginTop: 100 }}>Dự báo thời tiết {nameDate}</Text>
       </View>

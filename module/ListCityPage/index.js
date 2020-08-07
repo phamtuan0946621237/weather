@@ -5,6 +5,8 @@ import { ScrollView, TouchableOpacity } from 'react-native-gesture-handler';
 import Data from '../../data/data.json';
 import { CurrentWeather } from '../../navigation';
 import style from './style';
+import store from '../../redux/configStore'
+import {_less} from '../../redux/error/actions'
 function ListCityPage({ navigation }) {
   const [state, setState] = useState(
     {
@@ -20,6 +22,8 @@ function ListCityPage({ navigation }) {
     })
   }
 
+  // store.dispatch(_less())
+  // console.log('_less',store.getState())
   // Layout
   function _buildListCityItem(name,index) {
     return (

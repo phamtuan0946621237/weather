@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Button, View, Text } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import CurrentWeatherPage from '../module/CurrentWeatherPage'
+import CurrentWeatherPage from '../module/CurrentWeatherPage/presenter'
 import ListCityPage from '../module/ListCityPage'
 import MainPage from '../module/MainPage'
 // import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';

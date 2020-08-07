@@ -1,0 +1,1 @@
+export const LESS_THAN_ZERO = 'LESS_THAN_ZERO'

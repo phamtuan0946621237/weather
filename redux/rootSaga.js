@@ -22,7 +22,7 @@ export function* sagaGetFourDayWeather(action) {
         idCity
     } = action.payload
 
-    let response = yield Connection.GET_CURRENT_WEATHER("https://api.openweathermap.org/data/2.5/forecast", { id: idCity, appid: appId })
+    let response = yield Connection.GET_FIVEDAY_WEATHER("https://api.openweathermap.org/data/2.5/forecast", { id: idCity, appid: appId })
     // console.log("response : getFourDayWeatherComplete" ,response)
     yield put(getFourDayWeatherComplete(response))
 }
